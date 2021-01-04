@@ -1,0 +1,175 @@
+/*fontes*/
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+:root{
+	/*Variáveis que valem em qualquer elemento do documento*/
+	--amarelo-brasil: #ffdf00;
+	--verde-brasil: #009c3b;	
+	--azul-brasil: #001a4d; /*Um pouco mais escuro do que o azul anil do Brasil*/
+	
+	/*Espaçamentos da raíz*/
+	margin: 0;
+	padding: 0;
+	/*altura e largura do elemento raíz vai ser igual ao espaço total disponível*/
+	width: 100%;
+	height: 100%;
+}
+
+/*ao selecionar algum texto, o que muda nele?*/
+::selection{
+	background-color: #009c3b;
+	background-color: var(--verde-brasil, #009c3b);
+	color: #fff;
+}
+
+body{
+	/*Espaçamento do body*/
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+	/*estilização do body*/
+	background-color: #009c3b;
+	background: linear-gradient(45deg, hsla(143, 100%, 10%, 0.7), hsla(143, 100%, 50%, 0.7), hsla(143, 100%, 10%, 0.7)), url("../images/background.jpg") repeat fixed center;
+}
+
+@media(max-width:400px){
+	body{
+		width: 400px;
+	}
+}
+
+@media(max-width:400px),(max-height:700px){
+	body{
+		background: linear-gradient(45deg, hsla(143, 100%, 25%, 0.7), hsla(143, 100%, 25%, 0.7)), url("../images/background.jpg") repeat fixed center;
+	}
+}
+
+/*Título + título do form*/
+h1,h2{
+	text-align: center;
+}
+
+/*Título*/
+h1{
+	/*Espaçamento dentro e fora do titulo*/
+	margin-top: 0;
+	line-height: 2em;
+	/*background do titulo*/
+	background-color: #ffdf00;
+	background-color: var(--amarelo-brasil, #ffdf00);
+	/*estilos da fonte*/
+	font-family: 'Lobster', cursive;
+	color: #001a4d;
+	color: var(--azul-brasil, #001a4d);
+	/*outras estilizações*/
+	border-bottom: 3px solid;
+}
+
+/*formulário*/
+form{
+	/*variáveis*/
+	--cor-clara: #fff;
+	/*Espaço ocupado pelo formulário*/
+	width: 400px;
+	padding: 1em;
+	margin: 0 auto;
+	margin-top: 10vh;
+	box-sizing: border-box;
+	/*borda do formulário*/
+	border: 1px solid;
+	border-color: #ffdf00;
+	border-color: var(--amarelo-brasil, #ffdf00);
+	border-radius: 1em;
+	/*estilização de fontes*/
+	font-family: arial;
+	color: #fff;
+	color: var(--cor-clara, #fff);
+	/*estilização do form*/
+	background-color: #001a4d;
+	background-color: var(--azul-brasil, #001a4d);
+}
+
+/*divisóes dentro do formulário*/
+form div + div{
+	margin-top: 1.3em;
+	/*border: 1px solid red;*/
+}
+
+/*labels*/
+label{
+	display: inline-block;/*Para que o elemento posse ter uma largura e outras funcionalidades de um elemento block, mas não se comporte como um elemento block*/
+}
+
+.para-preencher label{
+	width: 120px;
+	text-align: right;
+}
+
+.campo-de-preenchimento {
+	width: 200px;
+	border: 1px solid #fff;
+	vertical-align: supper;
+	font-size: 1em;
+}
+
+.campo-de-preenchimento:focus{
+	box-shadow: 0 0 0 2px #ffdf00;
+	box-shadow: 0 0 0 2px var(--amarelo-brasil, #ffdf00);
+	outline: 0;
+}
+
+/*links*/
+a{
+	/*para retirar o sumblinhado padrão do link*/
+	text-decoration: none;
+	color: #ffdf00;
+	color: var(--amarelo-brasil, #ffdf00);
+}
+
+a:hover{color: var(--verde-brasil, #009c3b);}
+
+/*área dos termos*/
+#termos{
+	width: 300px;
+	margin-left: 50px;
+}
+
+#termos input{
+	vertical-align: top;
+}
+
+#termos label{
+	width: 250px;
+	text-align: justify;
+}
+
+/*submit*/
+button{
+	/*Espaçamento do botão*/
+	display: block;
+	width: 150px;
+	height: 40px;
+	margin: 0 auto .5em auto;
+	/*Estilo do botão*/
+	background-color: transparent;
+	cursor: pointer;
+	/*Fonte*/
+	font-size: 1em;
+	color: #ffdf00;
+	color: var(--amarelo-brasil, #ffdf00);
+	/*Borda*/
+	border: 2px solid;
+	border-color: #ffdf00; 
+	border-color: var(--amarelo-brasil, #ffdf00);
+	border-radius: .5em;
+}
+
+button:hover{
+	width: 149px;
+	height: 39px;
+	font-size: .99em;
+	margin-bottom: .57em;
+	color: #fff;
+	border-color: #fff;
+}
