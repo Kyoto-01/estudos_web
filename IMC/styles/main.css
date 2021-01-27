@@ -95,7 +95,7 @@ body{
 						color: #000;
 					}
 					
-					#form-btn-container button:not(:focus){
+					#form-btn-container button:not(:focus) & #form-btn-container button:not(:hover){
 						background-color: #000;
 						color: #fff;
 					}
