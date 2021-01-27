@@ -94,6 +94,11 @@ body{
 						background-color: #fff;
 						color: #000;
 					}
+					
+					#form-btn-container button:not(:focus) & #form-btn-container button:not(:hover){
+						background-color: #000;
+						color: #fff;
+					}
 		/* Fim da estilização do formulário de cálculo do imc e seus elementos filhos */
 
 		/* Estilizações do resultado do formulário */
