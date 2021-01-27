@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+	<head>
+		<!-- Meta tags -->
+		<title>Calcule o seu IMC</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="creator" content="Kyoto-01">
+		<meta name="description" content="execute e calcule de seu IMC(Índice de Massa Corporal).">
+		<meta name="keywords" content="imc, cálculo, altura, peso, índice de massa corporal">
+		<meta http-equiv="cache-control" content="no-cache">
+		<!-- fim das meta tags -->
+		
+		<!-- tags link -->
+		<link rel="shortcut icon" type="image/x-icon" href="https://4.bp.blogspot.com/-IRTjmInidKY/TdlLiOCYP3I/AAAAAAAAA9A/sONmSvDbBig/s1600/O11.png">
+		<link rel="stylesheet" type="text/css" href="styles/main.css">
+		<!-- Fontes -->	
+		<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Tinos&display=swap"><!-- Tinos -->
+		<!-- Fim das fontes -->
+		<!-- fim das tags link -->
+	</head>
+	<body>
+		<main id="container-main">
+			<!-- Formulário -->
+			<form id="imc-calc-form">
+				<div>
+					<h1>Calcule o seu IMC</h1>
+				</div>
+				<div class="input-div">
+					<label for="altura">Altura:</label>
+					<input id="altura" name="altura" type="number" step="0.01" min="1" max="3" placeholder="1,85" required>
+				</div>
+				<div class="input-div">
+					<label for="peso">Peso:</label>
+					<input id="peso" name="peso" type="number" step="0.01" min="1" max="1000" placeholder="70,00" required>
+				</div>
+				<div id="form-btn-container">
+					<button type="button">CALCULAR</button>
+				</div>
+			</form>
+			
+			<!-- Resultado das operações feitas ao clicar no botão de #imc-calc-form -->
+			<div id="resultado">
+				<h2>Seu resultado</h2>
+				<div id="container-resultado">
+					<img alt="imagem que ilustra seu resultado">
+					<p></p>
+				</div>
+			</div>
+		</main>
+		
+		<!-- scripts -->
+		<script type="text/javascript" src="scripts/imc.js"></script>
+		<script type="text/javascript" src="scripts/main.js"></script>
+		<!-- fim dos scripts -->
+	</body>
+</html>
